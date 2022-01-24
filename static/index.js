@@ -64,10 +64,13 @@ searchBtn.addEventListener("click", function() {
 });
 
 const fetchHeadlines = async() => {
+    //fetching data from the api
     const response = await fetch(HEADLINES_NEWS + API_KEY);
     newsDataArr = [];
     if (response.status >= 200 && response.status < 300) {
+        //converting data into JSON
         const myJson = await response.json();
+        //store data in array
         newsDataArr = myJson.articles;
     } else {
         // handle errors
