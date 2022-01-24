@@ -4,7 +4,7 @@ const sportsBtn = document.getElementById("sport");
 const entertainmentBtn = document.getElementById("entertainment");
 const technologyBtn = document.getElementById("technology");
 const searchBtn = document.getElementById("searchBtn");
-console.log(searchBtn);
+//console.log(searchBtn);
 
 const newsQuery = document.getElementById("newsQuery");
 const newsType = document.getElementById("newsType");
@@ -16,6 +16,7 @@ var newsDataArr = [];
 // apis 
 const API_KEY = "8a6a7952a4694c6b9ef0188a228e898f";
 const HEADLINES_NEWS = "https://newsapi.org/v2/top-headlines?country=in&apiKey=";
+
 console.log(HEADLINES_NEWS);
 const GENERAL_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=";
 const BUSINESS_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=";
